@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="gradientDiv">
+      <div>
+        <img src="images/logo sketchy (1).png" alt="" style="height: 200px" />
+        <h3>HELLO THERE I'M WILSON SAM, A CODE FANATIC.</h3>
+      </div>
+      <div>
+        <img src="images/back2-removebg-preview (1).png" alt="" />
+      </div>
+    </div>
+    <div class="light_slate">
+      <h2>NAVIGATION BAR</h2>
+
+      <div class="Nav_icons">
+        <div class="tab">
+          <i class="bx bxs-home" style="font-size: 40px"></i>
+          <p>HOME</p>
+        </div>
+        <div class="tab">
+          <i class="bx bxs-user-account" style="font-size: 40px"></i>
+          <p>ABOUT</p>
+        </div>
+        <div class="tab">
+          <i class="bx bxs-message-dots" style="font-size: 40px"></i>
+          <p>CONTACT</p>
+        </div>
+        <div class="tab">
+          <i class="bx bxs-bar-chart-square" style="font-size: 40px"></i>
+          <p>PROJECTS</p>
+        </div>
+        <div class="tab">
+          <i class="bx bx-wrench" style="font-size: 40px"></i>
+          <p>SKILLS</p>
+        </div>
+      </div>
+
+      <button class="btns">
+        <i class="bx bxl-github" style="font-size: 30px; color: black"></i>
+        Github Portfolio
+      </button>
+    </div>
+    <div class="dark_slate">
+      <h3 >I'M A CODING ENTHUSIAST</h3>
+      <div style="display: flex; padding-top: 40px;">
+        <div class="info_box">
+          <p>
+            I love creating clean and scalable web apps and exploring new
+            technologies.
+          </p>
+        </div>
+        <div class="info_box">
+          <p>
+            Constantly coding and looking to enhance my skills and thrive in new environments.
+          </p>
+        </div>
+        <div class="info_box">
+          <p>
+            I'm passionate about contributing to open-source projects, to learn something new and help as much as i can.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="light_slate">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi in similique labore obcaecati cum culpa iure incidunt qui totam ullam placeat est fuga fugit sunt, ut voluptate soluta esse dolore?</p>
+    
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi in similique labore obcaecati cum culpa iure incidunt qui totam ullam placeat est fuga fugit sunt, ut voluptate soluta esse dolore?</p>
+    
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi in similique labore obcaecati cum culpa iure incidunt qui totam ullam placeat est fuga fugit sunt, ut voluptate soluta esse dolore?</p>
+    
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi in similique labore obcaecati cum culpa iure incidunt qui totam ullam placeat est fuga fugit sunt, ut voluptate soluta esse dolore?</p>
+    
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi in similique labore obcaecati cum culpa iure incidunt qui totam ullam placeat est fuga fugit sunt, ut voluptate soluta esse dolore?</p>
+    </div>
+    <div class="dark_slate"></div>
+
+    <script>
+        const stickyElement = document.querySelector('.Nav_icons');
+        const stickyOffset = stickyElement.offsetTop;
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > stickyOffset){
+                stickyElement.style.position = 'fixed';
+                stickyElement.style.top = '0';
+
+            }else{
+                stickyElement.style.position = 'relative'
+            }
+        })
+    </script>
+  </body>
+</html>
